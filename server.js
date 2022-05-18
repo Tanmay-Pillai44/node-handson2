@@ -8,7 +8,7 @@ const app = express();
 
 // Route Creation
 
-app.get("/api/main", (req, res, next) => {
+app.get("/api/main", (req, res) => {
 
     res.send("Hello World"); // text response
     res.send("<h1>Hello World</h1>") // html response
