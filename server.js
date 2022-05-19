@@ -8,6 +8,10 @@ const app = express();
 
 // Route Creation
 
+app.get("/", (req, res) => {
+    res.send("I am root route");
+})
+
 app.get("/api/main", (req, res) => {
 
     res.send("Hello World"); // text response
